@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 .font-noto {
@@ -52,33 +53,81 @@
 #cart {
     color: #000000;
 }
+
 /* herosection styles  */
-.herosectoion{
+.herosectoion {
     margin-top: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.heroContent h1{
+
+.heroContent h1 {
     font-size: 65px;
     font-weight: 600;
     color: rgba(0, 0, 0, 1);
-    margin-bottom:60px ;
+    margin-bottom: 60px;
 }
 
 
-#span{
+.span {
     color: rgba(233, 90, 8, 1);
 }
-.heroContent p{
-    color:rgba(0, 0, 0, 0.5);
+
+.heroContent p {
+    color: rgba(0, 0, 0, 0.5);
     font-size: 22px;
-    font-weight:400;
-    
+    font-weight: 400;
+
 }
 
+/* Our Plants section styles */
+.plants-container{
+    margin-top: 200px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.heading {
+    font-size: 50px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
+}
 
+.para {
+    font-size: 22px;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
 
+.lily {
+    color: rgba(17, 17, 17, 1);
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.usd {
+    color: rgba(17, 17, 17, 1);
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.grid button{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(233, 90, 8, 1);
+    font-size: 16px;
+    padding: 26px 70px;
+    margin-top: 15px;
+    border: none;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
 @media screen and (max-width: 576px) {
     .navMenu ul li {
         display: none;
@@ -89,37 +138,87 @@
     }
 
     .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 1rem;
-    
-}
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1rem;
+
+    }
+
     .logoDiv img {
-    height: 40px;
-}
+        height: 40px;
+    }
 
-/* hero section styles  */
-.herosectoion{
-    margin-top: 28px; 
-    flex-direction: column;
-   
-}
-.heroImage{
-    order: -1;
-    margin-bottom: 2rem;
-    width: 100%;
+    /* hero section styles  */
+    .herosectoion {
+        margin-top: 28px;
+        flex-direction: column;
+
+    }
+
+    .heroImage {
+        order: -1;
+        margin-bottom: 2rem;
+        width: 100%;
+
+    }
+
+    .heroContent {
+        padding: 13px;
+    }
+
+    .heroContent h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .heroContent p {
+        font-size: 16px;
+    }
+
+
+
     
+/* Our Plants section styles */
+.plants-container{
+    margin-top: 28px;
+    text-align: center;
+    /* margin-bottom: 15px; */
 }
-.heroContent{
-    padding: 13px;
-}
-.heroContent h1{
+.heading {
     font-size: 36px;
-    margin-bottom:20px ;
 }
 
-.heroContent p{
-    font-size: 16px;    
+.para {
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
+.lily {
+    color: rgba(17, 17, 17, 1);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.usd {
+    color: rgba(17, 17, 17, 1);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.grid button{
+    padding: 16px 30px;
+    margin-top: 8px;
+}
+
+.gridcontainer{
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.grid img{
+    width: 171px;
+height: 196px;
+object-fit: cover;
+}
 }
